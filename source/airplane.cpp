@@ -1,12 +1,18 @@
 #include <stdio.h>
 #include <GL/glut.h>
 #include <stdio.h>
+#include <vetor.h>
 
 typedef struct Vertex
 {
-    float x, y, z; //posição do vertice
-    // float r, g, b; //cor do vertice
+    float x, y, z;
 }Vertex;
+
+Vertex vertices[] = {
+    {-0.5f , -0.5f , 0.0f},
+    {0.0f, 0.5f, 0.0f},
+    {0.5f , -0.5f , 0.0f}
+};
 
 
 void start()
@@ -14,11 +20,6 @@ void start()
     glClearColor(0, 0, 0, 0);
 }
 
-    Vertex vertices[] = {
-        {0.8f, 0.8f, 0.8f},
-        { 0.8f,  0.8f, 0.8f},
-        {0.8f, 0.8f, 0.8f},
-    };
 
 void display()
 {

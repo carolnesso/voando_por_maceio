@@ -4,7 +4,7 @@
 
 struct vec3
 {
-    float x, y,;
+    float x, y, z;
     vec3();
     vec3(float x_, float y_, float z_);
     vec3 operator+(const vec3& v)const;
