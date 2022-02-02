@@ -7,9 +7,9 @@ struct vec3
     float x, y, z;
     vec3();
     vec3(float x_, float y_, float z_);
-    vec3 operator+(const vec3& v)const;
-    vec3 operator-(const vec3& v)const;
-    vec3 operator*(float k)const;
+    vec3 operator + (const vec3 &v)const;
+    vec3 operator - (const vec3 &v)const;
+    vec3 operator * (float k)const;
     float mag();
     void normaliza();
     vec3 prodVetorial(vec3 v);
